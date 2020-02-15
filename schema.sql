@@ -34,3 +34,13 @@ CREATE TABLE sales (
     service_id INTEGER,
     price INTEGER
 );
+
+DROP TABLE managers;
+DROP TABLE users;
+DROP TABLE services;
+DROP TABLE atm_list;
+DROP TABLE sales;
+
+UPDATE users SET balance = 100 WHERE id = 7;
+UPDATE users SET balance = balance - 10 WHERE id = 7;
+SELECT balance FROM users WHERE id = 1;
